@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -D_MY_OPENGL_IS_33_
 
-C_INCLUDES = -I/home/vivian_withana/IG01/TP1/src/dep/glad/include -I/home/vivian_withana/IG01/TP1/src/dep -I/home/vivian_withana/IG01/TP1/src/dep/glfw/include -I/home/vivian_withana/IG01/TP1/src
+C_INCLUDES = -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glad/include -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw/include -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
-C_FLAGS = -g
+C_FLAGS = 
 
 CXX_DEFINES = -D_MY_OPENGL_IS_33_
 
-CXX_INCLUDES = -I/home/vivian_withana/IG01/TP1/src/dep/glad/include -I/home/vivian_withana/IG01/TP1/src/dep -I/home/vivian_withana/IG01/TP1/src/dep/glfw/include -I/home/vivian_withana/IG01/TP1/src
+CXX_INCLUDES = -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glad/include -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw/include -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
-CXX_FLAGS = -g -std=gnu++11
+CXX_FLAGS = -std=gnu++11
 

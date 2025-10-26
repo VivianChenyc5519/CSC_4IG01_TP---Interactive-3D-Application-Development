@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vivian_withana/IG01/TP1/src
+CMAKE_SOURCE_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vivian_withana/IG01/TP1/src/build
+CMAKE_BINARY_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vivian_withana/IG01/TP1/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vivian_withana/IG01/TP1/src/build/CMakeFiles /home/vivian_withana/IG01/TP1/src/build/dep/glm//CMakeFiles/progress.marks
-	cd /home/vivian_withana/IG01/TP1/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vivian_withana/IG01/TP1/src/build/CMakeFiles 0
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glm//CMakeFiles/progress.marks
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/clean
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,17 +148,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vivian_withana/IG01/TP1/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/preinstall
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/preinstall
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/glm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -184,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

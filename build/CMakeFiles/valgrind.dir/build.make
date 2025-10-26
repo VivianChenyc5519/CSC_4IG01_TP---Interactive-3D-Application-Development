@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vivian_withana/IG01/TP1/src
+CMAKE_SOURCE_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vivian_withana/IG01/TP1/src/build
+CMAKE_BINARY_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build
 
 # Utility rule file for valgrind.
 
@@ -67,8 +67,8 @@ include CMakeFiles/valgrind.dir/compiler_depend.make
 include CMakeFiles/valgrind.dir/progress.make
 
 CMakeFiles/valgrind: tpOpenGL
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vivian_withana/IG01/TP1/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running tpOpenGL with Valgrind..."
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=valgrind.log /home/vivian_withana/IG01/TP1/src/build/tpOpenGL
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running tpOpenGL with Valgrind..."
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=valgrind.log /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/tpOpenGL
 
 valgrind: CMakeFiles/valgrind
 valgrind: CMakeFiles/valgrind.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/valgrind.dir/clean:
 .PHONY : CMakeFiles/valgrind.dir/clean
 
 CMakeFiles/valgrind.dir/depend:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian_withana/IG01/TP1/src /home/vivian_withana/IG01/TP1/src /home/vivian_withana/IG01/TP1/src/build /home/vivian_withana/IG01/TP1/src/build /home/vivian_withana/IG01/TP1/src/build/CMakeFiles/valgrind.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles/valgrind.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/valgrind.dir/depend
 

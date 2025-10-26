@@ -12,9 +12,7 @@ out vec2 fTexCoord;
 void main() {
         gl_Position = projMat * viewMat * modelMat * vec4(vPosition, 1.0); // mandatory to rasterize properly
         fPosition = vec3(modelMat * vec4(vPosition, 1.0));
-        //fPosition = vPosition;
         fNormal = mat3(transpose(inverse(modelMat))) * vNormal;
-        //fNormal = vNormal;
         fTexCoord = vTexCoord;
 }
 

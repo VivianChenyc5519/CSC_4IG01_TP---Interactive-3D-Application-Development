@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vivian_withana/IG01/TP1/src
+CMAKE_SOURCE_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vivian_withana/IG01/TP1/src/build
+CMAKE_BINARY_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vivian_withana/IG01/TP1/src/build/CMakeFiles /home/vivian_withana/IG01/TP1/src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vivian_withana/IG01/TP1/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

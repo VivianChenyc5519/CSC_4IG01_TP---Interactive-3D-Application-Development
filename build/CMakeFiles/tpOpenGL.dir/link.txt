@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/tpOpenGL.dir/main.cpp.o CMakeFiles/tpOpenGL.dir/mesh.cpp.o CMakeFiles/tpOpenGL.dir/camera.cpp.o CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o -o tpOpenGL  dep/glfw/src/libglfw3.a -ldl /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 
+/usr/bin/c++ CMakeFiles/tpOpenGL.dir/main.cpp.o CMakeFiles/tpOpenGL.dir/mesh.cpp.o CMakeFiles/tpOpenGL.dir/camera.cpp.o CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o -o tpOpenGL  dep/glfw/src/libglfw3.a -ldl /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 

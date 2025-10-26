@@ -1,4 +1,4 @@
-# Install script for directory: /home/vivian_withana/IG01/TP1/src
+# Install script for directory: /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vivian_withana/IG01/TP1/src/build/dep/glfw/cmake_install.cmake")
-  include("/home/vivian_withana/IG01/TP1/src/build/dep/glm/cmake_install.cmake")
+  include("/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/cmake_install.cmake")
+  include("/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glm/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vivian_withana/IG01/TP1/src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

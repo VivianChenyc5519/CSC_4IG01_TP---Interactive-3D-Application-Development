@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/vivian_withana/IG01/TP1/src/build/dep/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/vivian_withana/IG01/TP1/src/build/dep/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/home/vivian_withana/IG01/TP1/src/build/dep/glfw/install_manifest.txt" files)
+file(READ "/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -114,8 +114,18 @@ GLuint loadTextureFromFileToGPU(const std::string &filename)
 // Executed each time the window is resized. Adjust the aspect ratio and the rendering viewport to the current window.
 void windowSizeCallback(GLFWwindow *window, int width, int height)
 {
-  g_camera.setAspectRatio(static_cast<float>(width) / static_cast<float>(height));
-  glViewport(0, 0, (GLint)width, (GLint)height); // Dimension of the rendering region in the window
+  // g_camera.setAspectRatio(static_cast<float>(width) / static_cast<float>(height));
+  // glViewport(0, 0, (GLint)width, (GLint)height); // Dimension of the rendering region in the window
+  int fbWidth, fbHeight;
+  glfwGetFramebufferSize(g_window, &fbWidth, &fbHeight);
+  g_camera.setAspectRatio((float)fbWidth / fbHeight);
+  glViewport(0, 0, fbWidth, fbHeight);
+  GLint viewport[4];
+  glGetIntegerv(GL_VIEWPORT, viewport);
+  std::cout << "Viewport: x=" << viewport[0]
+            << " y=" << viewport[1]
+            << " width=" << viewport[2]
+            << " height=" << viewport[3] << std::endl;
 }
 
 // Executed each time a key is entered.
@@ -192,6 +202,10 @@ void initOpenGL()
   glDepthFunc(GL_LESS);                 // Specify the depth test for the z-buffer
   glEnable(GL_DEPTH_TEST);              // Enable the z-buffer test in the rasterization
   glClearColor(0.7f, 0.7f, 0.7f, 1.0f); // specify the background color, used any time the framebuffer is cleared
+  int width, height;
+  glfwGetFramebufferSize(g_window, &width, &height);
+  std::cout << "the width is " << width << " and the height is " << height << std::endl;
+  glViewport(0, 0, width, height);
 }
 
 // Loads the content of an ASCII file in a standard C++ string
@@ -399,7 +413,7 @@ int main(int argc, char **argv)
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     earthptr->render(earthModel, glm::vec3(0.33, 0.5, 0.18), glm::vec3(0.0f), g_earthTexID, "earth"); // green
-    moonptr->render(moonModel, glm::vec3(0.3, 0.3, 0.7),  glm::vec3(0.0f), g_moonTexID, "moon");     // blue
+    moonptr->render(moonModel, glm::vec3(0.3, 0.3, 0.7), glm::vec3(0.0f), g_moonTexID, "moon");       // blue
     sunptr->render(sunModel, glm::vec3(1.0f, 1.0f, 0.0f), glm::vec3(1.0f, 0.9f, 0.5f), 10, "sun");    // yellow
     glfwSwapBuffers(g_window);
     glfwPollEvents();

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vivian_withana/IG01/TP1/src
+CMAKE_SOURCE_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vivian_withana/IG01/TP1/src/build
+CMAKE_BINARY_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include dep/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include dep/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 dep/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vivian_withana/IG01/TP1/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /home/vivian_withana/IG01/TP1/src/dep/glfw/src && /usr/bin/cmake -P /home/vivian_withana/IG01/TP1/src/dep/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw/src && /usr/bin/cmake -P /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: dep/glfw/src/CMakeFiles/update_mappings
 update_mappings: dep/glfw/src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ dep/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : dep/glfw/src/CMakeFiles/update_mappings.dir/build
 
 dep/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /home/vivian_withana/IG01/TP1/src/build/dep/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : dep/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 dep/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian_withana/IG01/TP1/src /home/vivian_withana/IG01/TP1/src/dep/glfw/src /home/vivian_withana/IG01/TP1/src/build /home/vivian_withana/IG01/TP1/src/build/dep/glfw/src /home/vivian_withana/IG01/TP1/src/build/dep/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw/src /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/src /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : dep/glfw/src/CMakeFiles/update_mappings.dir/depend
 

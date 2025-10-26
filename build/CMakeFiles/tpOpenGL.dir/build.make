@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vivian_withana/IG01/TP1/src
+CMAKE_SOURCE_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vivian_withana/IG01/TP1/src/build
+CMAKE_BINARY_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tpOpenGL.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/tpOpenGL.dir/progress.make
 include CMakeFiles/tpOpenGL.dir/flags.make
 
 CMakeFiles/tpOpenGL.dir/main.cpp.o: CMakeFiles/tpOpenGL.dir/flags.make
-CMakeFiles/tpOpenGL.dir/main.cpp.o: /home/vivian_withana/IG01/TP1/src/main.cpp
+CMakeFiles/tpOpenGL.dir/main.cpp.o: /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/main.cpp
 CMakeFiles/tpOpenGL.dir/main.cpp.o: CMakeFiles/tpOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian_withana/IG01/TP1/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tpOpenGL.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/main.cpp.o -MF CMakeFiles/tpOpenGL.dir/main.cpp.o.d -o CMakeFiles/tpOpenGL.dir/main.cpp.o -c /home/vivian_withana/IG01/TP1/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tpOpenGL.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/main.cpp.o -MF CMakeFiles/tpOpenGL.dir/main.cpp.o.d -o CMakeFiles/tpOpenGL.dir/main.cpp.o -c /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/main.cpp
 
 CMakeFiles/tpOpenGL.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tpOpenGL.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivian_withana/IG01/TP1/src/main.cpp > CMakeFiles/tpOpenGL.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/main.cpp > CMakeFiles/tpOpenGL.dir/main.cpp.i
 
 CMakeFiles/tpOpenGL.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tpOpenGL.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivian_withana/IG01/TP1/src/main.cpp -o CMakeFiles/tpOpenGL.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/main.cpp -o CMakeFiles/tpOpenGL.dir/main.cpp.s
 
 CMakeFiles/tpOpenGL.dir/mesh.cpp.o: CMakeFiles/tpOpenGL.dir/flags.make
-CMakeFiles/tpOpenGL.dir/mesh.cpp.o: /home/vivian_withana/IG01/TP1/src/mesh.cpp
+CMakeFiles/tpOpenGL.dir/mesh.cpp.o: /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/mesh.cpp
 CMakeFiles/tpOpenGL.dir/mesh.cpp.o: CMakeFiles/tpOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian_withana/IG01/TP1/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tpOpenGL.dir/mesh.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/mesh.cpp.o -MF CMakeFiles/tpOpenGL.dir/mesh.cpp.o.d -o CMakeFiles/tpOpenGL.dir/mesh.cpp.o -c /home/vivian_withana/IG01/TP1/src/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tpOpenGL.dir/mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/mesh.cpp.o -MF CMakeFiles/tpOpenGL.dir/mesh.cpp.o.d -o CMakeFiles/tpOpenGL.dir/mesh.cpp.o -c /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/mesh.cpp
 
 CMakeFiles/tpOpenGL.dir/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tpOpenGL.dir/mesh.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivian_withana/IG01/TP1/src/mesh.cpp > CMakeFiles/tpOpenGL.dir/mesh.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/mesh.cpp > CMakeFiles/tpOpenGL.dir/mesh.cpp.i
 
 CMakeFiles/tpOpenGL.dir/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tpOpenGL.dir/mesh.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivian_withana/IG01/TP1/src/mesh.cpp -o CMakeFiles/tpOpenGL.dir/mesh.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/mesh.cpp -o CMakeFiles/tpOpenGL.dir/mesh.cpp.s
 
 CMakeFiles/tpOpenGL.dir/camera.cpp.o: CMakeFiles/tpOpenGL.dir/flags.make
-CMakeFiles/tpOpenGL.dir/camera.cpp.o: /home/vivian_withana/IG01/TP1/src/camera.cpp
+CMakeFiles/tpOpenGL.dir/camera.cpp.o: /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/camera.cpp
 CMakeFiles/tpOpenGL.dir/camera.cpp.o: CMakeFiles/tpOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian_withana/IG01/TP1/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tpOpenGL.dir/camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/camera.cpp.o -MF CMakeFiles/tpOpenGL.dir/camera.cpp.o.d -o CMakeFiles/tpOpenGL.dir/camera.cpp.o -c /home/vivian_withana/IG01/TP1/src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tpOpenGL.dir/camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/camera.cpp.o -MF CMakeFiles/tpOpenGL.dir/camera.cpp.o.d -o CMakeFiles/tpOpenGL.dir/camera.cpp.o -c /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/camera.cpp
 
 CMakeFiles/tpOpenGL.dir/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tpOpenGL.dir/camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivian_withana/IG01/TP1/src/camera.cpp > CMakeFiles/tpOpenGL.dir/camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/camera.cpp > CMakeFiles/tpOpenGL.dir/camera.cpp.i
 
 CMakeFiles/tpOpenGL.dir/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tpOpenGL.dir/camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivian_withana/IG01/TP1/src/camera.cpp -o CMakeFiles/tpOpenGL.dir/camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/camera.cpp -o CMakeFiles/tpOpenGL.dir/camera.cpp.s
 
 CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o: CMakeFiles/tpOpenGL.dir/flags.make
-CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o: /home/vivian_withana/IG01/TP1/src/dep/glad/src/gl.c
+CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o: /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glad/src/gl.c
 CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o: CMakeFiles/tpOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian_withana/IG01/TP1/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o -MF CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o.d -o CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o -c /home/vivian_withana/IG01/TP1/src/dep/glad/src/gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o -MF CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o.d -o CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.o -c /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glad/src/gl.c
 
 CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vivian_withana/IG01/TP1/src/dep/glad/src/gl.c > CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glad/src/gl.c > CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.i
 
 CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vivian_withana/IG01/TP1/src/dep/glad/src/gl.c -o CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glad/src/gl.c -o CMakeFiles/tpOpenGL.dir/dep/glad/src/gl.c.s
 
 # Object files for target tpOpenGL
 tpOpenGL_OBJECTS = \
@@ -144,9 +144,9 @@ tpOpenGL: dep/glfw/src/libglfw3.a
 tpOpenGL: /usr/lib/x86_64-linux-gnu/librt.a
 tpOpenGL: /usr/lib/x86_64-linux-gnu/libm.so
 tpOpenGL: CMakeFiles/tpOpenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vivian_withana/IG01/TP1/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tpOpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tpOpenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tpOpenGL.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -E copy /home/vivian_withana/IG01/TP1/src/build/tpOpenGL /home/vivian_withana/IG01/TP1/src
+	/usr/bin/cmake -E copy /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/tpOpenGL /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # Rule to build all files generated by this target.
 CMakeFiles/tpOpenGL.dir/build: tpOpenGL
@@ -157,6 +157,6 @@ CMakeFiles/tpOpenGL.dir/clean:
 .PHONY : CMakeFiles/tpOpenGL.dir/clean
 
 CMakeFiles/tpOpenGL.dir/depend:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian_withana/IG01/TP1/src /home/vivian_withana/IG01/TP1/src /home/vivian_withana/IG01/TP1/src/build /home/vivian_withana/IG01/TP1/src/build /home/vivian_withana/IG01/TP1/src/build/CMakeFiles/tpOpenGL.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/CMakeFiles/tpOpenGL.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tpOpenGL.dir/depend
 

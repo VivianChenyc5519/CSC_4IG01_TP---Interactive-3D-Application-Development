@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vivian_withana/IG01/TP1/src
+CMAKE_SOURCE_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vivian_withana/IG01/TP1/src/build
+CMAKE_BINARY_DIR = /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include dep/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include dep/glfw/CMakeFiles/uninstall.dir/progress.make
 
 dep/glfw/CMakeFiles/uninstall:
-	cd /home/vivian_withana/IG01/TP1/src/build/dep/glfw && /usr/bin/cmake -P /home/vivian_withana/IG01/TP1/src/build/dep/glfw/cmake_uninstall.cmake
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw && /usr/bin/cmake -P /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/cmake_uninstall.cmake
 
 uninstall: dep/glfw/CMakeFiles/uninstall
 uninstall: dep/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ dep/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : dep/glfw/CMakeFiles/uninstall.dir/build
 
 dep/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/vivian_withana/IG01/TP1/src/build/dep/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : dep/glfw/CMakeFiles/uninstall.dir/clean
 
 dep/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/vivian_withana/IG01/TP1/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian_withana/IG01/TP1/src /home/vivian_withana/IG01/TP1/src/dep/glfw /home/vivian_withana/IG01/TP1/src/build /home/vivian_withana/IG01/TP1/src/build/dep/glfw /home/vivian_withana/IG01/TP1/src/build/dep/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw /home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : dep/glfw/CMakeFiles/uninstall.dir/depend
 

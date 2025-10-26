@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -D_MY_OPENGL_IS_33_
 
-C_INCLUDES = -I/home/vivian_withana/IG01/TP1/src/dep/glfw/include -I/home/vivian_withana/IG01/TP1/src/dep/glfw/src -I/home/vivian_withana/IG01/TP1/src/build/dep/glfw/src
+C_INCLUDES = -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw/include -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/dep/glfw/src -I/home/vivian-withana/25-26/IG01/CSC_4IG01_TP---Interactive-3D-Application-Development/build/dep/glfw/src
 
-C_FLAGS = -g -std=c99 -fPIC -Wall
+C_FLAGS = -std=c99 -fPIC -Wall
 
