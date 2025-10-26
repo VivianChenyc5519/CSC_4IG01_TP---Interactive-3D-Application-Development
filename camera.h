@@ -19,6 +19,10 @@ public:
     void setFar(const float n);
     void setPosition(const glm::vec3 &p);
     glm::vec3 getPosition();
+    void setFront(const glm::vec3 &f);
+    glm::vec3 getFront();
+    void setUp(const glm::vec3 &u);
+    glm::vec3 getUp();
 
     glm::mat4 computeViewMatrix() const;
 
@@ -27,6 +31,8 @@ public:
 
 private:
     glm::vec3 m_pos = glm::vec3(0, 0, 0);
+    glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+    glm::vec3 cameraUp = glm::vec3(0, 1, 0);
     float m_fov = 45.f;        // Field of view, in degrees
     float m_aspectRatio = 1.f; // Ratio between the width and the height of the image
     float m_near = 0.1f;       // Distance before which geometry is excluded from the rasterization process

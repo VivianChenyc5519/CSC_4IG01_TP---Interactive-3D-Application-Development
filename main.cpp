@@ -47,8 +47,15 @@ const static float kSizeMoon = 0.25;
 const static float kRadOrbitEarth = 10;
 const static float kRadOrbitMoon = 2;
 
+float deltaTime = 0.0f; // Time between current frame and last frame
+float lastFrame = 0.0f; // Time of last frame
+
 float earthRotation, earthOrbit, moonRotation, moonOrbit;
 GLuint g_earthTexID, g_moonTexID;
+bool firstMouse;
+float lastX = 0, lastY = 0;
+float yaw = -90.0f;
+float pitch = 0.0f;
 
 // Model transformation matrices
 glm::mat4 g_sun, g_earth, g_moon;
@@ -111,6 +118,15 @@ GLuint loadTextureFromFileToGPU(const std::string &filename)
   return texID;
 }
 
+glm::vec3 computeDirection(float yaw, float pitch)
+{
+  glm::vec3 direction = glm::vec3(0.0f, 0.0f, 0.0f);
+  direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+  direction.y = sin(glm::radians(pitch));
+  direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+  return direction;
+}
+
 // Executed each time the window is resized. Adjust the aspect ratio and the rendering viewport to the current window.
 void windowSizeCallback(GLFWwindow *window, int width, int height)
 {
@@ -120,18 +136,20 @@ void windowSizeCallback(GLFWwindow *window, int width, int height)
   glfwGetFramebufferSize(g_window, &fbWidth, &fbHeight);
   g_camera.setAspectRatio((float)fbWidth / fbHeight);
   glViewport(0, 0, fbWidth, fbHeight);
-  GLint viewport[4];
-  glGetIntegerv(GL_VIEWPORT, viewport);
-  std::cout << "Viewport: x=" << viewport[0]
-            << " y=" << viewport[1]
-            << " width=" << viewport[2]
-            << " height=" << viewport[3] << std::endl;
+  lastX = fbWidth / 2;
+  lastY = fbHeight / 2;
+  //   GLint viewport[4];
+  //   glGetIntegerv(GL_VIEWPORT, viewport);
+  //   std::cout << "Viewport: x=" << viewport[0]
+  //             << " y=" << viewport[1]
+  //             << " width=" << viewport[2]
+  //             << " height=" << viewport[3] << std::endl;
 }
 
 // Executed each time a key is entered.
 void keyCallback(GLFWwindow *window, int key, int scancode, int action, int mods)
 {
-  if (action == GLFW_PRESS && key == GLFW_KEY_W)
+  if (action == GLFW_PRESS && key == GLFW_KEY_L)
   {
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
   }
@@ -148,6 +166,70 @@ void keyCallback(GLFWwindow *window, int key, int scancode, int action, int mods
 void errorCallback(int error, const char *desc)
 {
   std::cout << "Error " << error << ": " << desc << std::endl;
+}
+
+void mouse_callback(GLFWwindow *window, double xpos, double ypos)
+{
+  if (firstMouse)
+  {
+    lastX = xpos;
+    lastY = ypos;
+    firstMouse = false;
+  }
+  float xoffset = xpos - lastX;
+  float yoffset = ypos - lastY;
+  lastX = xpos;
+  lastY = ypos;
+
+  const float sensitivity = 0.8f;
+  xoffset *= sensitivity;
+  yoffset *= sensitivity;
+
+  yaw += xoffset;
+  pitch += yoffset;
+
+  if (pitch > 89.0f)
+  {
+    pitch = 89.0f;
+  }
+  if (pitch < -89.0f)
+  {
+    pitch = -89.0f;
+  }
+  glm::vec3 front = computeDirection(yaw, pitch);
+  // std::cout << "front = (" << front.x << ", " << front.y << ", " << front.z << ")\n";
+  g_camera.setFront(front);
+}
+
+void processInput(GLFWwindow *window)
+{
+  if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    glfwSetWindowShouldClose(window, true);
+  glm::vec3 cameraPos = g_camera.getPosition();
+  glm::vec3 cameraFront = g_camera.getFront();
+  glm::vec3 cameraUp = g_camera.getUp();
+  float cameraSpeed = static_cast<float>(10 * deltaTime);
+  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+    cameraPos += cameraSpeed * cameraFront;
+  if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+    cameraPos -= cameraSpeed * cameraFront;
+  if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+    cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+  if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+    cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+  g_camera.setPosition(cameraPos);
+}
+
+void scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
+{
+  float fov = g_camera.getFov();
+  fov -= (float)yoffset;
+  if (fov < 1.0f)
+    fov = 1.0f;
+  if (fov > 45.0f)
+    fov = 45.0f;
+  g_camera.setFoV(fov);
+  // g_camera.computeProjectionMatrix();
 }
 
 void initGLFW()
@@ -184,6 +266,11 @@ void initGLFW()
   glfwMakeContextCurrent(g_window);
   glfwSetWindowSizeCallback(g_window, windowSizeCallback);
   glfwSetKeyCallback(g_window, keyCallback);
+  // tell GLFW to capture our mouse
+  // glfwSetCursorPosCallback(g_window, mouse_callback);
+  glfwSetScrollCallback(g_window, scroll_callback);
+  // glfwSetInputMode(g_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+  /// glfwSetInputMode(g_window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 }
 
 void initOpenGL()
@@ -204,7 +291,7 @@ void initOpenGL()
   glClearColor(0.7f, 0.7f, 0.7f, 1.0f); // specify the background color, used any time the framebuffer is cleared
   int width, height;
   glfwGetFramebufferSize(g_window, &width, &height);
-  std::cout << "the width is " << width << " and the height is " << height << std::endl;
+  // std::cout << "the width is " << width << " and the height is " << height << std::endl;
   glViewport(0, 0, width, height);
 }
 
@@ -363,6 +450,9 @@ void update(const float currentTimeInSec)
   earthOrbit = currentTimeInSec * earthOrbitSpeed;
   moonOrbit = currentTimeInSec * moonOrbitSpeed;
   moonRotation = currentTimeInSec * earthOrbitSpeed;
+
+  deltaTime = currentTimeInSec - lastFrame;
+  lastFrame = currentTimeInSec;
 }
 
 int main(int argc, char **argv)
@@ -372,6 +462,7 @@ int main(int argc, char **argv)
   {
     // animate
     update(static_cast<float>(glfwGetTime()));
+    processInput(g_window);
 
     // Tilt in earth
     float tilt = glm::radians(-23.5f);
